@@ -33,26 +33,30 @@ Le fichier de configuration est le suivant :
 
 2 - Déploiement de la solution  
 
+On lance le fichier de configuration avec la commande `sudo docker compose up -d`
 ![déploiement1](deploy1.png)  
 
 ![déploiement](deploy2.png)  
 
+On utilise ensuite la commande `sudo docker ps` pour voir les conteneurs en cours d'execution
 ![déploiement](deploy3.png)  
 
 Configuration de Wordpress  
 
 Depuis le navigateur de ma machine physique  
-
 ![install1](install1.png)  
 
+Ensuite on définit les identifiants  
 ![install2](install2.png)  
 
+On valide le compte et on se connecte ensuite  
 ![install3](install3.png)  
 
 ![install4](install4.png)  
 
 ![install5](install5.png)  
 
+On crée une nouvelle page  
 ![install6](install6.png)   
 
 ![install7](install7.png)  

@@ -57,6 +57,8 @@ Depuis le navigateur de ma machine physique
 
 ![install7](install7.png)  
 
-![install8](install8.png) 
+![install8](install8.png)  
+
+![install10](install10.png) 
 
 

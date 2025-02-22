@@ -64,7 +64,9 @@ On crée une nouvelle page
 On vérifie que la page est bien créée
 ![install10](install10.png) 
 
+Vérification de l'upload  
 ![install8](install8.png)  
-
-
-
+L'upload ne fonctionne pas convenablement. D'après le message d'erreur, notre serveur ne peut pas écrire dans le repertoire `uploads`. Nous allons donc vérifier les permissions de ce repertoire.  
+Pour ce faire nous utilisons la commande `sudo docker exec -it wordpress_site ls -la /var/www/html/wp-content`
+Nous remarquons que ce repertoire appartient au `root` et par conséquent l'utilisateur `www-data` ne peut pas écrire dans ce repertoire. Il est donc question de faire passer ce repertoire à l'utilisateur `www-data`et à son groupe.  
+cela se fait grace à la commande `sudo docker exec -it wordpress_site chown -R www-data:www-data /var/www/html/wp-content/uploads`

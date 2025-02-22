@@ -73,3 +73,6 @@ Nous remarquons que ce repertoire appartient au `root` et par conséquent l'util
 Cela se fait grace à la commande `sudo docker exec -it wordpress_site chown -R www-data:www-data /var/www/html/wp-content/uploads`   
 
 ![erreur1](erreur1.png)
+
+Ensuite on restart on relance le docker-compose et on éssaie l'upload
+![install9](install9.png) 

@@ -61,8 +61,10 @@ On crée une nouvelle page
 
 ![install7](install7.png)  
 
+On vérifie que la page est bien créée
+![install10](install10.png) 
+
 ![install8](install8.png)  
 
-![install10](install10.png) 
 
 

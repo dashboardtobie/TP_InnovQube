@@ -33,4 +33,8 @@ Le fichier de configuration est le suivant :
 
 2 - Déploiement de la solution  
 
-![déploiement](deploy1.png)
+![déploiement1](deploy1.png)  
+
+![déploiement](deploy2.png)  
+
+![déploiement](deploy3.png)

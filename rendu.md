@@ -32,3 +32,4 @@ Création du dossier de travail
 Le fichier de configuration est le suivant : 
 
 2 - Déploiement de la solution
+![déploiement](deploy1.png)

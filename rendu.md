@@ -37,4 +37,21 @@ Le fichier de configuration est le suivant :
 
 ![déploiement](deploy2.png)  
 
-![déploiement](deploy3.png)
+![déploiement](deploy3.png)  
+
+Configuration de Wordpress  
+
+Depuis le navigateur de ma machine physique  
+
+![install1](install1.png)  
+
+![install2](install2.png)  
+
+![install3](install3.png)  
+
+![install4](install4.png)  
+
+![install5](install5.png)  
+
+
+

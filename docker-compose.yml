@@ -1,0 +1,46 @@
+
+services:
+  db:
+    image: mysql:5.7  # Utilisation de l'image officielle MySQL 5.7
+    container_name: wordpress_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wpuser
+      MYSQL_PASSWORD: wppass
+    volumes:
+      - db_data:/var/lib/mysql  # Persistance des données MySQL
+    networks:
+      - wp_network
+
+  wordpress:
+    image: wordpress:latest  # Utilisation de l'image officielle WordPress
+    container_name: wordpress_site
+    restart: always
+    depends_on:
+      - db  # Démarrage après MySQL
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: wpuser
+      WORDPRESS_DB_PASSWORD: wppass
+      WORDPRESS_DB_NAME: wordpress
+    ports:
+      - "8080:80"  # Accès à WordPress via localhost:8080
+    volumes:
+      - wp_data:/var/www/html  # Persistance des fichiers WordPress
+      - wp_uploads:/var/www/html/wp-content/uploads  # Persistance des uploads
+      - wp_plugins:/var/www/html/wp-content/plugins  # Persistance des plugins
+      - wp_themes:/var/www/html/wp-content/themes  # Persistance des thèmes
+    networks:
+      - wp_network
+
+volumes:
+  db_data:
+  wp_data:
+  wp_uploads:
+  wp_plugins:
+  wp_themes:
+
+networks:
+  wp_network:
